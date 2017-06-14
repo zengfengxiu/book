@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 常量定义 -->
+	<!-- 开发模式 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 对象工厂 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 编码格式 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- action后缀名 -->
+	<constant name="struts.action.extension" value="do" />
+
+	<!-- 包定义 -->
+	<package name="ssh" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="success">/success.jsp</result>
+			<result name="failure">/failure.jsp</result>
+		</global-results>
+	</package>
+</struts>
